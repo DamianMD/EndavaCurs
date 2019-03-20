@@ -1,0 +1,12 @@
+﻿@using LibrarieOnline.Models
+@model IEnumerable<Book>
+
+<h1>Here's my list of books</h1>
+
+@foreach (var book in Model)
+{
+    <h2>Id:@book.Id</h2>
+    <h3>Name:@book.Name</h3>
+    <h3>Author:@book.Author</h3>
+    <h3>Description:@book.Description</h3>
+}
